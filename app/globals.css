@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #F3F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-secondary: #F8FAFC;
+  --bg-selected: #EBF1FA;
+  --border-color: #E5E9F2;
+  --border-focused: #164C92;
+
+  --text-primary: #1A2138;
+  --text-secondary: #64748B;
+  --text-muted: #94A3B8;
+  --text-on-primary: #FFFFFF;
+
+  --brand-primary: #164C92;
+  --brand-primary-dark: #0D3873;
+  --brand-primary-mid: #17529E;
+  --brand-primary-light: #1E64BA;
+  --brand-primary-soft: #EBF1FA;
+
+  --tint-blue-bg: #EBF1FA;
+  --tint-blue: #164C92;
+  --tint-green-bg: #E8F7EE;
+  --tint-green: #16A34A;
+  --tint-cyan-bg: #EBF3FE;
+  --tint-cyan: #2563EB;
+  --tint-purple-bg: #F5ECFC;
+  --tint-purple: #8B5CF6;
+  --tint-amber-bg: #FEF3C7;
+  --tint-amber: #D97706;
+  --tint-red-bg: #FEE2E2;
+  --tint-red: #DC2626;
+
+  --shadow-card: 0px 2px 8px rgba(14, 36, 71, 0.05);
+  --shadow-button: 0px 4px 10px rgba(22, 76, 146, 0.18);
+}
+
+html.dark {
+  --bg-page: #0B1120;
+  --bg-surface: #141C2E;
+  --bg-surface-secondary: #1B253B;
+  --bg-selected: #1E293B;
+  --border-color: #26324B;
+  --border-focused: #3B82F6;
+
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-on-primary: #FFFFFF;
+
+  --brand-primary: #3B82F6;
+  --brand-primary-dark: #0D3873;
+  --brand-primary-mid: #17529E;
+  --brand-primary-light: #2563EB;
+  --brand-primary-soft: #1E293B;
+
+  --tint-blue-bg: #172554;
+  --tint-blue: #60A5FA;
+  --tint-green-bg: #143326;
+  --tint-green: #4ADE80;
+  --tint-cyan-bg: #172554;
+  --tint-cyan: #60A5FA;
+  --tint-purple-bg: #2E1065;
+  --tint-purple: #C084FC;
+  --tint-amber-bg: #451A03;
+  --tint-amber: #FBBF24;
+  --tint-red-bg: #450A0A;
+  --tint-red: #F87171;
+
+  --shadow-card: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow-button: 0px 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+@theme inline {
+  --font-sans: var(--font-cairo), "Spline Sans", "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-cairo), "Spline Sans", "Inter", system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.shadow-button {
+  box-shadow: var(--shadow-button);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0D3873 0%, #17529E 52%, #1E64BA 100%);
+}
